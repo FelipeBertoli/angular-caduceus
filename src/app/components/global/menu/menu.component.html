@@ -1,0 +1,20 @@
+<div class="nav-ajust d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary text-align-center border border-dark border-right">
+    <a href="/" class="text-decoration-none text-align-center">
+        <span class="fs-2">Caduceus</span>
+    </a>
+    <b class="text-primary" style="text-transform: uppercase;">{{ role }}</b>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <menu-button label="Pacientes" *ngIf="role == 'Médico'" [routerLink]="['/medic', 'patients']"></menu-button>
+        <menu-button label="Consultas" *ngIf="role == 'Médico'" [routerLink]="['/medic', 'appointments']"></menu-button>
+        <menu-button label="Atestados" *ngIf="role == 'Médico'" [routerLink]="['/medic', 'certificates']"></menu-button>
+        <menu-button label="Receitas" *ngIf="role == 'Médico'" [routerLink]="['/medic/recipes']"></menu-button>
+
+        <menu-button label="Marcar consultas" *ngIf="role == 'Paciente'" [routerLink]="['/customer', 'mark-appointment']"></menu-button>
+        <menu-button label="Suas Consultas" *ngIf="role == 'Paciente'"  [routerLink]="['/customer', 'appointments']"></menu-button>
+        <menu-button label="Seus atestados" *ngIf="role == 'Paciente'" [routerLink]="['/customer', 'records']"></menu-button>
+        <menu-button label="Suas receitas" *ngIf="role == 'Paciente'" [routerLink]="['/customer', 'recipes']"></menu-button>
+    </ul>
+    <hr>
+    <menu-dropdown></menu-dropdown>
+</div>

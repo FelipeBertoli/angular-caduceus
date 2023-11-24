@@ -1,0 +1,56 @@
+<a *ngIf="role == 'medic'" class="list-group-item list-group-item-action flex-column align-items-start rounded">
+  <div class="d-flex w-100 align-items-center justify-content-between">
+    <div class="d-flex align-items-center gap-4 text-align-center">
+      <img src="assets/default-user.jfif" class="rounded" style="width: 6em;" alt="">
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Nome do Paciente</b>
+        <span class="w-75 text-align-center">Nome</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Idade</b>
+        <span>0</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Endereço</b>
+        <span>Cidade, UF</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">CPF</b>
+        <span>123.456.789-00</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Última consulta</b>
+        <span>01/01/2000</span>
+      </div>
+    </div>
+    <i class="fi fi-bs-angle-right text-primary pr-2m5"></i>
+  </div>
+</a>
+
+<div *ngIf="role == 'customer'" class="list-group-item list-group-item-action rounded">
+  <div class="d-flex w-100 align-items-center justify-content-between">
+    <div class="d-flex align-items-center gap-4 text-align-center">
+      <img src="assets/default-user.jfif" class="rounded" style="width: 6em;" alt="">
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Nome do Doutor</b>
+        <span class="w-75 text-align-center">Nome</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Especialidade</b>
+        <span>Especialidade</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Disponibilidade</b>
+        <span>Segunda à Sexta</span>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <b class="mx-4">Experiência</b>
+        <span>1 à 2 anos</span>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <button class="btn btn-primary my-2 my-sm-0">Ver mais</button>
+      <button class="btn btn-primary my-2 my-sm-0">Agendar consulta</button>
+    </div>
+  </div>
+</div>

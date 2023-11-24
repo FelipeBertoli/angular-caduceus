@@ -1,0 +1,27 @@
+<div class="cover-container d-flex w-100 flex-column text-center bg-dark text-white">
+    <main class="px-3 d-flex" style="height: 100vh;">
+        <div class="banner bg-primary" style=" width: 60%;">
+            <img src="assets/banner.png" class="w-100 h-100" alt="">
+        </div>
+        <div class="login-container container d-flex  align-items-center justify-content-center flex-column text-white" style="width: 40%;">
+            <h2 class="text-uppercase mb-4">Caduceus</h2>
+            <form class="mb-3">
+                <div class="mb-2">
+                  <label for="exampleInputEmail1" class="form-label text-white">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label text-white">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-white" for="exampleCheck1">Manter-me conectado</label>
+                  </div>
+                <a routerLink="['../medic/recipes']"> <button type="submit" class="btn btn-primary">Entrar</button></a>
+               
+              </form>
+              <button type="submit" class="btn btn-primary">Registrar-se</button>
+        </div>
+
+    </main>

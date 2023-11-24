@@ -1,0 +1,12 @@
+<main *ngIf="showMenu; else login" class="d-flex flex-nowrap" >    
+    <app-menu *ngIf="showMedicMenu" role="Médico" class="main-container"></app-menu>
+    <app-menu *ngIf="showPatientMenu"  role="Paciente" class="main-container"></app-menu>
+    
+    <div class="container p-5" style="margin-left: 25em;">
+        <router-outlet></router-outlet>
+    </div>
+</main>
+
+<ng-template #login>
+    <router-outlet></router-outlet>
+</ng-template>
